@@ -5,11 +5,13 @@
   "dependencies": {
     "react": "16.2.0",
     "react-dom": "16.2.0",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "source-map-explorer": "^1.7.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "analyze": "source-map-explorer build/static/js/main.*",
     "test": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace || true",
     "test:module1": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module1 || true",
     "test:module2": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module2 || true",
